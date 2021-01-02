@@ -1,0 +1,144 @@
+/*=============== FOOTER ===============*/
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.location {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: $color-lead;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.footer-mail,
+.footer-tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: $color-description;
+
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+
+    &:focus,
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+.footer-slogan,
+.footer-form-title {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size:14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    color: $color-lead;
+    text-transform: uppercase;
+}
+
+.footer-contacts-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.footer-contact-item {
+    padding-top: 9px;
+}
+
+.footer-info,
+.footer-contacts {
+    display: block;
+}
+
+.footer-info {
+    width: 231px;
+    margin-right: 70px;
+}
+
+.footer-slogan-contacts {
+    margin-right: 93px;
+}
+
+.footer-contacts-icon {
+    fill: $color-lead;
+}
+
+.footer-contacts-item {
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.footer-form-title {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-form-field,
+.footer-form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-form-input {
+    margin-right: 12px;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+
+    color:$color-lead;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+}
+
+.footer-form-btn {
+    width: 200px;
+    height: 50px;
+
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+
+    color: $color-lead;
+    background-color: $accent-color;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.footer-form-btn,
+.footer-form-btn-icon {
+    outline: none;
+    border: none;
+}
+
+.footer-form-btn-icon {
+    margin-left: 10px;
+}
+/*=============== END FOOTER ===============*/

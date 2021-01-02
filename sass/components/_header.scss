@@ -1,0 +1,185 @@
+/*=============== HEADER ===============*/
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.menu-btn {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color:transparent;
+
+    & .icon-cross {
+        display: none;
+    }
+
+    @media screen and (min-width:767px) {
+        display: none;
+    }
+}
+
+/*.menu-btn.is-open .icon-cross {
+    display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+    display: none;
+}*/
+
+.nav,
+.nav-list,
+.address {
+    display: flex;
+    
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}
+
+.nav-list-item,
+.address-mail,
+.address-tel {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $color-description;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.nav-list-item {
+
+    &-link {
+        display: inline-block;
+        text-decoration: none;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        color: $color-title;
+        transition-duration: $duration;
+        transition-timing-function: $timing-function;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.nav-list-item,
+.address-mail,
+.address-tel {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $color-description;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.address-list {
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
+}
+
+.address-list-item {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+
+        @media screen and (min-width:1200px) {
+            margin-bottom: 0;
+            margin-right: 30px;
+        }
+    }
+}
+
+.address-mail-icon {
+    margin-right: 10px;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+
+    .address-mail:hover &,
+    .address-mail:focus & {
+        fill: $accent-color;
+    }
+
+}
+
+.address-tel-icon {
+    margin-right: 10px;
+
+    .address-tel:hover &,
+    .address-tel:focus & {
+        fill: $accent-color;
+    }
+}
+
+.address-mail,
+.address-tel {
+    display: flex;
+    align-items:center;
+}
+
+.current {
+    position: relative;
+    color: $accent-color;
+
+    &::after {
+        content:"";
+        display: inline-block;
+        background-color: $accent-color;
+        position: absolute;
+        bottom: -1px;
+        right: 0;
+        
+        width: 100%;
+        height: 4px;
+    
+        border-radius: 2px;  
+    }
+}
+
+/*
+.header .conteiner,
+.footer .conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo {
+    margin-right: 93px;
+}
+.header .address {
+    margin-left: auto;
+}
+
+.header .address-mail {
+    margin-right: 30px;
+}
+
+.address-mail,
+.address-tel {
+    fill: currentColor;
+}
+/*=============== END HEADER ===============*/

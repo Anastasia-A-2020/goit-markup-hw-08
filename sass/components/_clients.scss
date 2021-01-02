@@ -1,0 +1,37 @@
+/*=============== CLIENTS ===============*/
+/*.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        border: 1px solid $accent-color;
+    }
+}
+
+.client-list-link-icon {
+    fill: #AFB1B8;
+    
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+
+    .client-list-link:hover &,
+    .client-list-link:focus & {
+        fill: $accent-color;
+    }
+}*/
+/*=============== END CLIENTS ===============*/
