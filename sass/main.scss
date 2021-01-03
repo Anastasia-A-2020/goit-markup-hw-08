@@ -1,12 +1,13 @@
 @import "./utils/variables";
+@import "./base/common";
 @import "./components/body";
-@import "./components/header";
-@import "./components/logo";
 @import "./components/components";
 @import "./components/conteiner";
-@import "./base/common";
 
+@import "./components/header";
+@import "./components/logo";
 @import "./components/hero";
+@import "./components/modal";
 @import "./components/discription";
 @import "./components/activities";
 @import "./components/team";
