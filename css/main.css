@@ -312,6 +312,13 @@ body {
   background-color: #C4C4C4;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero .conteiner {
   text-align: center;
   justify-content: center;
@@ -610,7 +617,7 @@ body {
   padding-bottom: 60px;
 }
 
-@media screen and (margin-bottom: 1200px) {
+@media screen and (min-width: 1200px) {
   .advantage,
   .clients {
     padding-top: 94px;
@@ -618,11 +625,13 @@ body {
   }
 }
 
-.advantage-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: center;
+        align-items: center;*/
+  }
 }
 
 .advantage-list-icon {
@@ -648,6 +657,24 @@ body {
 
 .advantage-list-item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-list-item:not(:last-child) {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-list-item:nth-child(2n-1) {
+    margin-right: 30px;
+  }
 }
 
 .advantage-list-item-title {
