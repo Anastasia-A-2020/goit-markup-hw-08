@@ -210,6 +210,7 @@ body {
 }
 
 .address-mail-icon {
+  fill: #757575;
   margin-right: 10px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -221,7 +222,10 @@ body {
 }
 
 .address-tel-icon {
+  fill: #757575;
   margin-right: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-tel:hover .address-tel-icon,
@@ -373,7 +377,7 @@ body {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img-mob1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 480px 400px;
@@ -381,19 +385,24 @@ body {
 
 @media screen and (min-width: 768px) {
   .overlay {
+    max-width: 1199px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img-tab1x.png);
     background-size: 768px 400px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .overlay {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img-desk1x.png);
     background-size: 1600px 600px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay .overlay {
-    background-image: url(../images/bg-img2x.png);
+    background-image: url(../images/bg-imgmob2x.png);
   }
 }
 
@@ -633,27 +642,6 @@ body {
   }
 }
 
-.advantage-list-icon {
-  width: 450px;
-  height: 120px;
-  background-color: #F5F4FA;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-}
-
-@media screen and (min-width: 768px) {
-  .advantage-list-icon {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantage-list-icon {
-    width: 270px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .advantage-list-item {
     margin: 15px;
@@ -704,6 +692,27 @@ body {
   }
   .advantage-list-item-description:not(:last-child) {
     padding-right: 30px;
+  }
+}
+
+.advantage-list-icon {
+  width: 450px;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-list-icon {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-list-icon {
+    width: 270px;
   }
 }
 

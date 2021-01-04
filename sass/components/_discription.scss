@@ -16,23 +16,6 @@
         flex-wrap: wrap;
         margin: -15px;
     }
-    
-    &-icon {
-        width: 450px;
-        height: 120px;
-        background-color: #F5F4FA;
-        border-radius: 4px;
-        margin-bottom: 30px;
-        padding: 25px 100px;
-
-        @media screen and (min-width:768px) {
-            width: 354px;
-        }
-
-        @media screen and (min-width:1200px) {
-            width: 270px;
-        }
-    }
 
     &-item {
         @media screen and (min-width:768px) {
@@ -80,6 +63,23 @@
                 }
             }
         }       
+    }
+    
+    &-icon {
+        width: 450px;
+        height: 120px;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        padding: 25px 100px;
+
+        @media screen and (min-width:768px) {
+            width: 354px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
     }
 }
 /*=============== END DISCRIPTION ===============*/

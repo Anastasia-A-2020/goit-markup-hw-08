@@ -115,6 +115,7 @@
 }
 
 .address-mail-icon {
+    fill: $color-description;
     margin-right: 10px;
     transition-duration: $duration;
     transition-timing-function: $timing-function;
@@ -127,7 +128,10 @@
 }
 
 .address-tel-icon {
+    fill: $color-description;
     margin-right: 10px;
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
 
     .address-tel:hover &,
     .address-tel:focus & {
