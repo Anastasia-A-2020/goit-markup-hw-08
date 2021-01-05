@@ -1,14 +1,25 @@
 /*=============== TEAM ===============*/
-/*
+
 .team {
     background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    &-list {
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: -30px;
+            margin-left: -30px;
+        }
+    }
 }
 
-.team-list{
-    display: flex; 
-}
 
 .team-list-item {
     text-align: center;
@@ -19,9 +30,23 @@
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
 
-    &:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (min-width:768px) {
+        margin-top: 30px;
+        margin-left: 30px;
     }
+
+    &-photo {
+        @media screen and (min-width:768px) {
+            width: 354px;
+            height: 374px;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 270px;
+            height: 260px;
+        }
+    }
+
 }
 
 .team-list-info {
@@ -46,10 +71,22 @@
 
 .social-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
     margin: 0;
     padding-top: 16px;
+
+    @media screen and (min-width:1200px) {
+        justify-content: space-between;
+    }
+
+    &-item:not(:last-child) {
+        margin-right: 10px;
+
+        @media screen and (min-width:1200px) {
+            margin-right: 0;
+        }
+    }
 }
 
 .social-list_link,
@@ -77,5 +114,5 @@
 
 .social-list_link {
     fill: #AFB1B8;
-}*/
+}
 /*=============== END TEAM ===============*/
