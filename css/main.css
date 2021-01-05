@@ -737,7 +737,14 @@ body {
   line-height: 1.167;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutus-title,
+  .our-clients {
+    margin-bottom: 50px;
+  }
 }
 
 .activities-list {
@@ -899,41 +906,66 @@ body {
 
 /*=============== END TEAM ===============*/
 /*=============== CLIENTS ===============*/
-/*.clients-list {
-    display: flex;
-    justify-content: space-between;
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
+}
+
+@media screen and (max-width: 1600px) {
+  .clients-list {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .client-list-item {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 }
 
 .client-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  width: 210px;
+  height: 90px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .client-list-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list-link {
     width: 170px;
-    height: 90px;
+  }
+}
 
-    transition-duration: $duration;
-    transition-timing-function: $timing-function;
-
-    &:hover,
-    &:focus {
-        color: $accent-color;
-        border: 1px solid $accent-color;
-    }
+.client-list-link:hover, .client-list-link:focus {
+  color: #2196F3;
+  border: 1px solid #2196F3;
 }
 
 .client-list-link-icon {
-    fill: #AFB1B8;
-    
-    transition-duration: $duration;
-    transition-timing-function: $timing-function;
+  fill: #AFB1B8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    .client-list-link:hover &,
-    .client-list-link:focus & {
-        fill: $accent-color;
-    }
-}*/
+.client-list-link:hover .client-list-link-icon,
+.client-list-link:focus .client-list-link-icon {
+  fill: #2196F3;
+}
+
 /*=============== END CLIENTS ===============*/
 /*=============== FOOTER ===============*/
 /*.footer {
