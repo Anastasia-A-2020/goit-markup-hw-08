@@ -1,8 +1,28 @@
 /*=============== FOOTER ===============*/
-/*.footer {
+.footer {
+    display: block;
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
+
+    &-form {
+        @media screen and (max-width:1199px) {
+            margin-top: 60px;
+        }
+    }
+}
+
+.footer-info,
+.footer-contacts {
+    display: block;
+}
+
+.footer-info {
+    @media screen and (min-width:1200px) {
+        width: 231px;
+        margin-right: 70px;
+    }
 }
 
 .location {
@@ -35,6 +55,10 @@
     }
 }
 
+.footer-form {
+    flex-wrap: wrap;
+}
+
 .footer-slogan,
 .footer-form-title {
     font-family: $main-font;
@@ -49,13 +73,17 @@
 
 .footer-contacts-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
     padding-top: 20px;
+
+    @media screen and (min-width:1200px) {
+        justify-content: space-between;
+    }
 }
 
 .footer-contact-item {
-    padding-top: 9px;
+    padding-top: 8px;
 }
 
 .footer-info,
@@ -63,13 +91,10 @@
     display: block;
 }
 
-.footer-info {
-    width: 231px;
-    margin-right: 70px;
-}
-
 .footer-slogan-contacts {
-    margin-right: 93px;
+    @media screen and (max-width:767px) {
+        margin-top: 60px;
+    }
 }
 
 .footer-contacts-icon {
@@ -97,14 +122,15 @@
 .footer-form-field,
 .footer-form-btn {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .footer-form-input {
-    margin-right: 12px;
+    
     padding-left: 16px;
-    width: 358px;
+    width: 450px;
     height: 50px;
 
     color:$color-lead;
@@ -113,9 +139,27 @@
     border-radius: 4px;
     background-color: transparent;
     outline: none;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 20px;
+    }
+
+    
+
+    @media screen and (min-width:1200px) {
+        margin-right: 12px;
+        width: 358px;
+    }
+
+    @media screen and (max-width:1199px) {
+        display:block;
+    }
 }
 
 .footer-form-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 50px;
 
@@ -140,5 +184,5 @@
 
 .footer-form-btn-icon {
     margin-left: 10px;
-}*/
+}
 /*=============== END FOOTER ===============*/
