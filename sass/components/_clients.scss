@@ -15,6 +15,12 @@
         margin-top: 30px;
         margin-left: 30px;
     }
+
+    &:not(:first-child) {
+        @media screen and (min-width:1200px) {
+            margin-left: 30px;
+        }
+    }
 }
 
 .client-list-link {

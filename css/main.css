@@ -941,6 +941,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .client-list-item:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
 .client-list-link {
   display: flex;
   justify-content: center;
@@ -1041,6 +1047,9 @@ body {
 
 .footer-form {
   flex-wrap: wrap;
+  /*@media screen and (min-width:768px) and (max-width:1199px) {
+        margin-top: 60px;
+    }*/
 }
 
 .footer-slogan,
@@ -1113,6 +1122,12 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 767px) {
+  .footer-form-field {
+    display: block;
+  }
+}
+
 .footer-form-input {
   padding-left: 16px;
   width: 450px;
@@ -1124,7 +1139,7 @@ body {
   outline: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-form-input {
     margin-bottom: 20px;
   }
