@@ -19,13 +19,18 @@
     }
 }
 
-/*.menu-btn.is-open .icon-cross {
+.icon-menu:hover,
+.icon-menu:focus {
+    fill: $accent-color;
+}
+
+.menu-btn.is-open .icon-cross {
     display: block;
 }
 
 .menu-btn.is-open .icon-menu {
     display: none;
-}*/
+}
 
 .nav,
 .nav-list,
