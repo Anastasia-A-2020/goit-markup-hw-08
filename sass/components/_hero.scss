@@ -74,6 +74,14 @@
     background-position: center;
     background-size: 480px 400px;
 
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx){
+        .overlay {
+            background-image: url(../images/bg-imgmob2x.png);
+        }
+    }
+
     @media screen and (min-width:768px) {
         max-width: 1199px;
         background-image: 
@@ -81,8 +89,15 @@
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
             url(../images/bg-img-tab1x.png);
-        background-size: 768px 400px;
-       
+        background-size: 768px 400px;  
+        
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx){
+            .overlay {
+                background-image: url(../images/bg-img-tab2x.png);
+            }
+        }             
     }
 
     @media screen and (min-width:1200px) {
@@ -94,13 +109,13 @@
                         rgba(47, 48, 58, 0.4)),
             url(../images/bg-img-desk1x.png);
         background-size: 1600px 600px;
-    }
-    
-    @media screen and (min-device-pixel-ratio: 2),
+
+        @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        .overlay {
-          background-image: url(../images/bg-imgmob2x.png);
+        screen and (min-resolution: 2dppx){
+            .overlay {
+                background-image: url(../images/bg-img-desk2x.png);
+            }
         }
     }
 
