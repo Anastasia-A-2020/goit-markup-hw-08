@@ -1,8 +1,10 @@
 /*=============== HEADER ===============*/
 .header {
     position: relative;
-    @media screen and (max-width:767px){
-        height: 60px;
+    height: 60px;
+    border-bottom: 1px solid #ececec;
+    @media screen and (min-width:767px){
+        height: 80px;
     }
 
     & .conteiner {
@@ -47,8 +49,6 @@
 }
 
 .menu-container {
-    text-align: center;
-
     @media screen and (max-width: 767px) {
         display: none;
         position: absolute;
@@ -58,13 +58,15 @@
     }
 
     &.is-open {
-        display: block;
-        background-color: $color-lead;
+        
     }
 }
 
 @media screen and (max-width: 767px) {
     .menu-container.is-open {
+        display: block;
+        text-align: center;
+        background-color: $color-lead;
         height: 393px;
         padding-top: 60px;
         padding-bottom: 60px;
@@ -89,7 +91,7 @@
     transition-duration: $duration;
     transition-timing-function: $timing-function;
     @media screen and (min-width:768px) {
-        font-size: 18px;
+        font-size: 14px;
         line-height: 1.143;
     }
 
@@ -103,8 +105,7 @@
     &-link {
         display: inline-block;
         text-decoration: none;
-        /*padding-top: 32px;
-        padding-bottom: 32px;*/
+
         color: $color-title;
         transition-duration: $duration;
         transition-timing-function: $timing-function;
@@ -121,7 +122,7 @@
     }
     .nav {
         margin-bottom: 60px;
-    }        
+    }       
 }
 
 .address-list {
@@ -167,6 +168,41 @@
         fill: $accent-color;
     }
 }
+
+.address-mail,
+.address-tel {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px) {
+    .menu-container,
+    .nav,
+    .nav-list,
+    .address {
+        display: flex;
+        align-items: center;
+        /*flex-grow: 1;*/
+    }
+    .nav-list-item:not(:last-child) {
+        margin-right: 50px;
+    }
+    .nav-list-item {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+@media screen and (max-width:1199px) {
+    .address-list {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .address {
+        margin-left: 69px;
+    }
+}
+
 .current {
     position: relative;
     color: $accent-color;
@@ -176,7 +212,7 @@
         display: inline-block;
         background-color: $accent-color;
         position: absolute;
-        bottom: -1px;
+        bottom: -33px;
         right: 0;
         
         width: 100%;
@@ -186,45 +222,4 @@
     }
 }
 
-.address-mail,
-.address-tel {
-    display: flex;
-    align-items:center;
-    justify-content: center;
-}
-
-
-
-
-
-
-
-/*
-@media screen and (min-width:768px) {
-    .nav-list-item:not(:last-child) {
-        margin-right: 50px;
-    }
-}
-@media screen and (min-width:768px) {
-    .menu-container,
-    .nav,
-    .nav-list,
-    .address {
-        display: flex;
-        align-items: center;
-       /*flex-grow: 1;*/
-   /* }
-}
-
-@media screen and (min-width:768px) {
-    .address {
-        margin-left: 84px;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .address {
-        margin-left: 305px;
-    }
-}*/
 /*=============== END HEADER ===============*/
