@@ -26,40 +26,44 @@
                 </svg>
             </button>
 
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-list-item">
-                        <a class="nav-list-item-link current" href="">Студия</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a class="nav-list-item-link" href="./portfolio/portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a class="nav-list-item-link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu-container" data-menu>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-list-item">
+                            <a class="nav-list-item-link current" href="">Студия</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-item-link" href="./portfolio/portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-item-link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <address class="address">
+                    <ul class="address-list">
+                        <li class="address-list-item">
+                            <a class="address-mail" href="mailto:info@example.com">
+                                    <svg class="address-mail-icon" width="16" height="12">
+                                        <use href="./images/sprite.svg#envelope"></use>
+                                    </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="address-list-item">
+                            <a class="address-tel" href="tel:380991111111">
+                                    <svg class="address-tel-icon" width="10" height="16">
+                                        <use href="./images/sprite.svg#smartphone"></use>
+                                    </svg>
+                                +380961111111
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
 
-            <address class="address">
-                <ul class="address-list">
-                    <li class="address-list-item">
-                        <a class="address-mail" href="mailto:info@example.com">
-                                <svg class="address-mail-icon" width="16" height="12">
-                                    <use href="./images/sprite.svg#envelope"></use>
-                                </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="address-list-item">
-                        <a class="address-tel" href="tel:380991111111">
-                                <svg class="address-tel-icon" width="10" height="16">
-                                    <use href="./images/sprite.svg#smartphone"></use>
-                                </svg>
-                            +380961111111
-                        </a>
-                    </li>
-                </ul>
-            </address>
+            
 
         </div>
     </header>  
@@ -503,7 +507,7 @@
         </div>
     </footer>
 
-    <script srh="./js/menu.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     
 </body>

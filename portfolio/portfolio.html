@@ -12,6 +12,7 @@
 
     <header class="header">
         <div class="conteiner">
+
             <a class="logo" href="/">
                 <span class="logo-blue">Web</span><span class="logo-black">Studio</span>
             </a>
@@ -23,40 +24,45 @@
                 </svg>
             </button>
 
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-list-item"> 
-                        <a class="nav-list-item-link" href="../index.html">Студия</a>
-                    </li>
-                    <li class="nav-list-item"> 
-                        <a class="nav-list-item-link current" href="">Портфолио</a>
-                    </li>
-                    <li class="nav-list-item"> 
-                        <a class="nav-list-item-link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="menu-container" data-menu>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-list-item">
+                            <a class="nav-list-item-link current" href="../index.html">Студия</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-item-link" href="./portfolio/portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a class="nav-list-item-link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <address class="address">
+                    <ul class="address-list">
+                        <li class="address-list-item">
+                            <a class="address-mail" href="mailto:info@example.com">
+                                    <svg class="address-mail-icon" width="16" height="12">
+                                        <use href="../images/sprite.svg#envelope"></use>
+                                    </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="address-list-item">
+                            <a class="address-tel" href="tel:380991111111">
+                                    <svg class="address-tel-icon" width="10" height="16">
+                                        <use href="../images/sprite.svg#smartphone"></use>
+                                    </svg>
+                                +380961111111
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
 
-            <address class="address">
-                <ul class="address-list">
-                    <li class="address-list-item">
-                        <a class="address-mail" href="mailto:info@example.com">
-                                <svg class="address-mail-icon" width="16" height="12">
-                                    <use href="../images/sprite.svg#envelope"></use>
-                                </svg>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="address-list-item">
-                        <a class="address-tel" href="tel:380991111111">
-                                <svg class="address-tel-icon" width="10" height="16">
-                                    <use href="../images/sprite.svg#smartphone"></use>
-                                </svg>
-                            +380961111111
-                        </a>
-                    </li>
-                </ul>
-            </address>
+            
+
         </div>
     </header>  
 
@@ -127,10 +133,12 @@
 
                                     <img class="projects-list-picture" src="../images/mobile/mob-02.png" alt="Пример постера"/> <!--width="370" height="294"-->
                                 </picture>
+
                                 <p class="projects-list-description is-hidden-desc">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="projects-list-item-border">
-                                <h2 class="projects-list-title">Постер New Orlean vs Golden Star</h2>
+                                <h2 class="projects-list-title">Постер <span lang="en">New Orlean vs Golden
+                                    Star</span></h2>
                                 <p class="projects-list-text">Дизайн</p>
                             </div>
                         </a>
@@ -178,6 +186,7 @@
 
                                     <img class="projects-list-picture" src="../images/mobile/mob-04.png" alt="Наушники"/> <!--width="370" height="294"-->
                                 </picture>
+
                                 <p class="projects-list-description is-hidden-desc">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="projects-list-item-border">
@@ -395,6 +404,8 @@
 
         </div>
     </footer>
+
+    <script src="../js/menu.js"></script>
 
 </body>
 </html>

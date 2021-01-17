@@ -1,12 +1,26 @@
 /*=============== HEADER ===============*/
 .header {
-    border-bottom: 1px solid #ECECEC;
+    position: relative;
+    @media screen and (max-width:767px){
+        height: 60px;
+    }
+
+    & .conteiner {
+        display: flex;
+        height: 100%;
+        align-items: center;        
+    }
 }
+
+.menu-container {
+    display: none;
+}
+
 
 .menu-btn {
     display: inline-flex;
     padding: 0;
-    margin: 0;
+    margin-left: auto;
     border: none;
     background-color:transparent;
 
@@ -14,7 +28,7 @@
         display: none;
     }
 
-    @media screen and (min-width:767px) {
+    @media screen and (min-width:768px) {
         display: none;
     }
 }
@@ -32,13 +46,33 @@
     display: none;
 }
 
-.nav,
-.nav-list,
-.address {
-    display: flex;
-    
-    @media screen and (max-width:767px) {
+.menu-container {
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
         display: none;
+        position: absolute;
+        top:100%;
+        left:0;
+        width:100%;
+    }
+
+    &.is-open {
+        display: block;
+        background-color: $color-lead;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-container.is-open {
+        height: 393px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        z-index: 999;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity $duration $timing-function, visibility $duration $timing-function;
     }
 }
 
@@ -47,13 +81,17 @@
 .address-tel {
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
+    font-size: 18px;
+    line-height: 1.172;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $color-description;
     transition-duration: $duration;
     transition-timing-function: $timing-function;
+    @media screen and (min-width:768px) {
+        font-size: 18px;
+        line-height: 1.143;
+    }
 
     &:hover,
     &:focus {
@@ -62,12 +100,11 @@
 }
 
 .nav-list-item {
-
     &-link {
         display: inline-block;
         text-decoration: none;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        /*padding-top: 32px;
+        padding-bottom: 32px;*/
         color: $color-title;
         transition-duration: $duration;
         transition-timing-function: $timing-function;
@@ -76,30 +113,15 @@
         &:focus {
             color: $accent-color;
         }
-    }
-
-    &:not(:last-child) {
-        margin-right: 50px;
-    }
+    }    
 }
-
-.nav-list-item,
-.address-mail,
-.address-tel {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: $color-description;
-    transition-duration: $duration;
-    transition-timing-function: $timing-function;
-
-    &:hover,
-    &:focus {
-        color: $accent-color;
+@media screen and (max-width:767px){
+    .nav-list-item:not(:last-child){
+        margin-bottom: 40px;
     }
+    .nav {
+        margin-bottom: 60px;
+    }        
 }
 
 .address-list {
@@ -110,8 +132,10 @@
 
 .address-list-item {
     &:not(:last-child) {
-        margin-bottom: 10px;
-
+        margin-bottom: 16px;
+        @media screen and (min-width:768px) {
+            margin-bottom: 10px;
+        }
         @media screen and (min-width:1200px) {
             margin-bottom: 0;
             margin-right: 30px;
@@ -143,13 +167,6 @@
         fill: $accent-color;
     }
 }
-
-.address-mail,
-.address-tel {
-    display: flex;
-    align-items:center;
-}
-
 .current {
     position: relative;
     color: $accent-color;
@@ -169,27 +186,45 @@
     }
 }
 
-
-/*
-.header .conteiner,
-.footer .conteiner {
-    display: flex;
-    align-items: center;
-}
-
-.header .logo {
-    margin-right: 93px;
-}
-.header .address {
-    margin-left: auto;
-}
-
-.header .address-mail {
-    margin-right: 30px;
-}
-
 .address-mail,
 .address-tel {
-    fill: currentColor;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
+
+
+
+
+
+
+
+/*
+@media screen and (min-width:768px) {
+    .nav-list-item:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+@media screen and (min-width:768px) {
+    .menu-container,
+    .nav,
+    .nav-list,
+    .address {
+        display: flex;
+        align-items: center;
+       /*flex-grow: 1;*/
+   /* }
+}
+
+@media screen and (min-width:768px) {
+    .address {
+        margin-left: 84px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .address {
+        margin-left: 305px;
+    }
+}*/
 /*=============== END HEADER ===============*/
