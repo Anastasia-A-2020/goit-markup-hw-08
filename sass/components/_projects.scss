@@ -153,4 +153,10 @@
     transform: translateY(0%);
 }
 
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .unique {
+        padding-bottom: 56px;
+    }
+}
+
 /*================== END PROJECTS ==================*/
