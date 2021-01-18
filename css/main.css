@@ -319,6 +319,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-container {
+    flex-grow: 1;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .menu-container.is-open {
     display: block;
@@ -438,7 +444,13 @@ body {
 .address-tel {
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .address-mail,
+  .address-tel {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -448,7 +460,6 @@ body {
   .address {
     display: flex;
     align-items: center;
-    /*flex-grow: 1;*/
   }
   .nav-list-item:not(:last-child) {
     margin-right: 50px;
@@ -458,17 +469,16 @@ body {
     padding-bottom: 32px;
   }
   .address {
-    margin-left: 69px;
+    margin-left: auto;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .address-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
+/*@media screen and (min-width:768px) and (max-width:1199px) {
+    .address-list {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+}*/
 @media screen and (min-width: 1200px) {
   .address {
     margin-left: 305px;
@@ -931,7 +941,7 @@ body {
 }
 
 .advantage-list-item-description {
-  width: 450px;
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
