@@ -663,7 +663,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -682,10 +682,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
-  width: 450px;
-  height: 609px;
+  max-height: 609px;
   padding: 40px;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 450px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -698,7 +703,7 @@ body {
 .close {
   position: absolute;
   top: 8px;
-  left: 412px;
+  right: 8px;
   display: flex;
   align-items: center;
   width: 30px;
@@ -706,12 +711,6 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #ffffff;
-}
-
-@media screen and (min-width: 1200px) {
-  .close {
-    left: 490px;
-  }
 }
 
 .close-icon {
@@ -822,6 +821,7 @@ body {
   font-size: 12px;
   line-height: 1.172;
   letter-spacing: 0.03em;
+  text-align: start;
   color: #757575;
 }
 
@@ -1030,7 +1030,6 @@ body {
 
 .activities-list-item-text {
   position: absolute;
-  /*top:224px;*/
   bottom: 0px;
   left: 0;
   z-index: 1;
@@ -1178,7 +1177,8 @@ body {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: space-between;*/
+  flex-basis: 100%;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1600px) {
@@ -1186,6 +1186,11 @@ body {
     margin-top: -30px;
     margin-left: -30px;
   }
+}
+
+.our-clients {
+  display: block;
+  text-align: center;
 }
 
 @media screen and (max-width: 1600px) {
